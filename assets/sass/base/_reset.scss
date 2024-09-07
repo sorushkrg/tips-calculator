@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Space-mono";
+    src: url("../../../public/font/SpaceMono-Bold.ttf");
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Space-mono";
+    color: $White;
+    background-color: $Light-grayish-primary;
+}
+label {
+    display: block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.form-control#tip-percent-input::placeholder {
+    color: hsl(184deg, 14%, 56%);
+}
+.tip-percent-input {
+    height: 85%;
+    background-color: #f4fafa;
+}
+.tip-percent-input::-moz-placeholder {
+    font-size: 2rem;
+}
+.tip-percent-input:-ms-input-placeholder {
+    font-size: 2rem;
+}
+.tip-percent-input::placeholder {
+    font-size: 2rem;
+}

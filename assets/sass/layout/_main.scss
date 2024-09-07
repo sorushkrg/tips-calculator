@@ -1,0 +1,99 @@
+.calculator {
+    background-color: $White;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 3rem;
+
+    .input-label {
+        color: hsl(186deg, 14%, 43%);
+        font-size: 60%;
+    }
+
+    .form-control {
+        background-color: $White;
+        border-color: $Very-light-grayish-primary;
+        color: $Very-dark-primary;
+    }
+    .form-control:focus {
+        background-color: $White;
+        box-shadow: none;
+        border: 2px solid;
+        border-color: $Strong-primary;
+        color: $Very-dark-primary;
+    }
+    .form-control.bill-input {
+        background: url("../../../public/img/images/icon-dollar.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position: 5%;
+        background-color: #f4fafa;
+    }
+    .form-control.num-ppl-input {
+        background: url("../../../public/img/images/icon-person.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position: 5%;
+        background-color: #f4fafa;
+    }
+
+    .btn {
+        width: 100%;
+        background-color: $Very-dark-primary;
+        color: $White;
+    }
+    .btn:focus {
+        box-shadow: none;
+    }
+    .result {
+        background-color: $Very-dark-primary;
+        border-radius: 20px;
+        .result .row {
+            font-size: 1rem;
+        }
+    }
+    .result .row div:nth-child(2) {
+        font-size: 2rem;
+        color: $Strong-primary;
+    }
+    .result .btn {
+        background-color: $Strong-primary;
+        color: $Very-dark-primary;
+        margin-top: 17%;
+    }
+    .result .btn:hover {
+        background-color: $Light-grayish-primary;
+    }
+    .unit {
+        color: hsl(184deg, 14%, 56%);
+        margin-top: -5%;
+    }
+    .input-label {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        margin: 5% auto;
+    }
+
+    .result .row div:nth-child(2) {
+        font-size: 2.5rem;
+    }
+    .result .btn {
+        margin-top: 17%;
+    }
+    .tip-percent-input {
+        height: 85%;
+    }
+    .tip-percent-input::placeholder {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1200px) {
+    .logo {
+        margin-top: 3rem;
+    }
+    .calculator {
+        margin-bottom: 20%;
+    }
+}
