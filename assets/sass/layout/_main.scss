@@ -3,122 +3,111 @@
     border-radius: 20px;
     margin: auto;
     margin-top: 3rem;
-
+  
     .input-label {
-        color: hsl(186deg, 14%, 43%);
-        font-size: 60%;
+      color: hsl(186deg, 14%, 43%);
+      font-size: 60%;
     }
-
+  
     .form-control {
+      background-color: $White;
+      border-color: $Very-light-grayish-primary;
+      color: $Very-dark-primary;
+  
+      &:focus {
         background-color: $White;
-        border-color: $Very-light-grayish-primary;
-        color: $Very-dark-primary;
-
-        &:focus {
-            background-color: $White;
-            box-shadow: none;
-            border: 2px solid;
-            border-color: $Strong-primary;
-            color: $Very-dark-primary;
-        }
-
-        &.bill-input {
-            background: url("../../../public/img/images/icon-dollar.svg")
-                no-repeat left 5%;
-            background-color: #f4fafa;
-        }
-
-        &.num-ppl-input {
-            background: url("../../../public/img/images/icon-person.svg")
-                no-repeat left 5%;
-            background-color: #f4fafa;
-        }
-    }
-
-    .btn {
-        width: 100%;
-        background-color: $Very-dark-primary;
-        color: $White;
-
-        &:focus {
-            box-shadow: none;
-        }
-    }
-
-    .result {
-        background-color: $Very-dark-primary;
-        border-radius: 20px;
-
-        .row {
-            font-size: 1rem;
-
-            div:nth-child(2) {
-                font-size: 2rem;
-                color: $Strong-primary;
-            }
-        }
-
-        .btn {
-            background-color: $Strong-primary;
-            color: $Very-dark-primary;
-            margin-top: 17%;
-
-            &:hover {
-                background-color: $Light-grayish-primary;
-            }
-        }
-    }
-
-    .unit {
-        color: hsl(184deg, 14%, 56%);
-        margin-top: -5%;
-    }
-
-    .input-label {
-        font-size: 15px;
-    }
-    .selected {
-        background-color: hsl(172deg, 67%, 45%);
-        color: hsl(183deg, 100%, 15%);
         box-shadow: none;
-        border-color: hsl(172deg, 67%, 45%);
+        border: 2px solid;
+        border-color: $Strong-primary;
+        color: $Very-dark-primary;
+      }
+  
+      &.bill-input {
+        background: url("../../../public/img/images/icon-dollar.svg") no-repeat left 5%;
+        background-color: #f4fafa;
+      }
+  
+      &.num-ppl-input {
+        background: url("../../../public/img/images/icon-person.svg") no-repeat left 5%;
+        background-color: #f4fafa;
+      }
     }
-
-    .invalid-value-mess {
-        color: hsl(0deg, 0%, 100%);
+  
+    .btn {
+      width: 100%;
+      background-color: $Very-dark-primary;
+      color: $White;
+  
+      &:focus {
+        box-shadow: none;
+      }
     }
-}
-
-@media (min-width: 1200px) {
-    .logo {
-        margin: 5% auto;
-    }
-
+  
     .result {
-        .row div:nth-child(2) {
-            font-size: 2.5rem;
+      background-color: $Very-dark-primary;
+      border-radius: 20px;
+  
+      .row {
+        font-size: 1rem;
+  
+        div:nth-child(2) {
+          font-size: 2rem;
+          color: $Strong-primary;
         }
-
-        .btn {
-            margin-top: 17%;
+      }
+  
+      .btn {
+        background-color: $Strong-primary;
+        color: $Very-dark-primary;
+        margin-top: 17%;
+  
+        &:hover {
+          background-color: $Light-grayish-primary;
         }
+      }
     }
-
-    .tip-percent-input {
-        height: 85%;
-
-        &::placeholder {
-            font-size: 2rem;
-        }
+  
+    .unit {
+      color: hsl(184deg, 14%, 56%);
+      margin-top: -5%;
     }
-}
-
-@media (max-width: 1200px) {
+  
+    .input-label {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
     .logo {
-        margin-top: 3rem;
+      margin: 5% auto;
     }
-
+  
+    .result {
+      .row div:nth-child(2) {
+        font-size: 2.5rem;
+      }
+  
+      .btn {
+        margin-top: 17%;
+      }
+    }
+  
+    .tip-percent-input {
+      height: 85%;
+  
+      &::placeholder {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .logo {
+      margin-top: 3rem;
+    }
+  
     .calculator {
-        margin-bottom: 20%;
+      margin-bottom: 20%;
     }
-}
+  }
+  
